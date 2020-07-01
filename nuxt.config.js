@@ -77,27 +77,27 @@ export default {
     // transpile: [/vant.*?less/],
     babel: {
       plugins: [
-        [
-          'import',
-          {
-            libraryName: 'ant-design-vue',
-            // style: true,
-            style: (name) => {
-              return `${name}/style/index.js`
-            },
-          },
-          'ant-design-vue',
-        ],
         // [
         //   'import',
         //   {
-        //     libraryName: 'vant',
+        //     libraryName: 'ant-design-vue',
+        //     // style: true,
         //     style: (name) => {
         //       return `${name}/style/index.css`
         //     },
         //   },
-        //   // 'vant',
+        //   'ant-design-vue',
         // ],
+        [
+          'import',
+          {
+            libraryName: 'vant',
+            style: (name) => {
+              return `${name}/index.css`
+            },
+          },
+          // 'vant',
+        ],
         // [
         //   'import',
         //   {

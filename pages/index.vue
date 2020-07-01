@@ -20,7 +20,7 @@
           rel="noopener noreferrer"
           class="button--grey"
         >
-          GitHub
+          GitHub sdfsd
         </a>
       </div>
       <Rate v-model="value"></Rate>
@@ -39,13 +39,14 @@ import { Button } from 'vant'
 import { Rate } from 'ant-design-vue'
 // import '~node_modules/vant/lib/button/style'
 // import '@/node_modules/ant-design-vue/lib/rate/style/index.css'
-// import 'vant/lib/button/style/index.js'
+import 'ant-design-vue/lib/rate/style/index.less'
+import 'vant/lib/style/base.css'
 
 export default {
   components: { Button, Rate },
   data() {
     return {
-      value: 4,
+      value: 1,
     }
   },
 }
